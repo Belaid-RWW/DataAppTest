@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav2"
+    app:startDestination="@id/listFragmentEntreprise">
+
+    <fragment
+        android:id="@+id/listFragmentEntreprise"
+        android:name="com.example.mydata.fragments.list.ListFragmentEntreprise"
+        android:label="Liste d'entreprises ajoutées"
+        tools:layout="@layout/fragment_list_entreprise" >
+        <action
+            android:id="@+id/action_listFragmentEntreprise_to_addFragmentEntreprise"
+            app:destination="@id/addFragmentEntreprise" />
+        <action
+            android:id="@+id/action_listFragmentEntreprise_to_updateFragmentEntreprise"
+            app:destination="@id/updateFragmentEntreprise" />
+    </fragment>
+    <fragment
+        android:id="@+id/addFragmentEntreprise"
+        android:name="com.example.mydata.fragments.add.AddFragmentEntreprise"
+        android:label="Ajouter entreprise"
+        tools:layout="@layout/fragment_add_entreprise" >
+        <action
+            android:id="@+id/action_addFragmentEntreprise_to_listFragmentEntreprise"
+            app:destination="@id/listFragmentEntreprise" />
+    </fragment>
+    <fragment
+        android:id="@+id/updateFragmentEntreprise"
+        android:name="com.example.mydata.fragments.update.UpdateFragmentEntreprise"
+        android:label="Mettre à jour entreprise"
+        tools:layout="@layout/fragment_update_entreprise" >
+        <action
+            android:id="@+id/action_updateFragmentEntreprise_to_listFragmentEntreprise"
+            app:destination="@id/listFragmentEntreprise" />
+        <argument
+            android:name="currentEntreprise"
+            app:argType="com.example.mydata.model.Entreprise" />
+    </fragment>
+</navigation>

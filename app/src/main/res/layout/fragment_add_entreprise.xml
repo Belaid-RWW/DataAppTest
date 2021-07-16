@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".fragments.add.AddFragmentEntreprise"
+        android:layout_marginTop="60dp">
+
+        <EditText
+            android:id="@+id/addIDImm"
+            android:layout_width="wrap_content"
+            android:fontFamily="@font/kanit"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:background="@drawable/rectangle_2"
+            android:hint="ID Immeuble"
+            android:padding="10dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/addNomPresta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:fontFamily="@font/kanit"
+            app:layout_constraintTop_toBottomOf="@id/addIDImm"
+            app:layout_constraintStart_toStartOf="parent"
+            android:padding="10dp"
+            android:background="@drawable/rectangle_2"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:hint="Nom Prestataire"
+            android:inputType="textPersonName"
+             />
+
+        <AutoCompleteTextView
+            android:id="@+id/addDom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/kanit"
+
+            android:background="@drawable/rectangle_2"
+            android:ems="10"
+            android:hint="Domaine d'activité"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/addNomPresta" />
+
+
+        <AutoCompleteTextView
+            android:id="@+id/addAct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rectangle_2"
+            android:ems="10"
+            android:hint="Activité"
+            android:padding="10dp"
+            android:fontFamily="@font/kanit"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/addDom" />
+
+        <AutoCompleteTextView
+            android:id="@+id/addHorDeb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rectangle_2"
+            android:ems="10"
+            android:hint="Horaire d'ouverture"
+            android:fontFamily="@font/kanit"
+
+            android:padding="10dp"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/addAct" />
+
+        <AutoCompleteTextView
+            android:id="@+id/addHorFin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rectangle_2"
+            android:ems="10"
+            android:fontFamily="@font/kanit"
+
+            android:hint="Horaire de fermeture"
+            android:padding="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/addHorDeb" />
+
+        <EditText
+            android:id="@+id/addTel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:ems="10"
+            android:fontFamily="@font/kanit"
+
+            android:inputType="textPersonName"
+            android:layout_marginTop="20dp"
+            android:hint="Tél"
+            android:padding="10dp"
+            android:background="@drawable/rectangle_2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/addHorFin" />
+
+        <EditText
+            android:id="@+id/addFax"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:ems="10"
+            android:fontFamily="@font/kanit"
+
+            android:inputType="textPersonName"
+            android:background="@drawable/rectangle_2"
+            android:hint="Fax"
+            android:padding="10dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/addTel" />
+
+        <EditText
+            android:id="@+id/addGsm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:background="@drawable/rectangle_2"
+            android:fontFamily="@font/kanit"
+
+            android:hint="Gsm"
+            android:padding="10dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/addFax" />
+
+        <EditText
+            android:id="@+id/addEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:fontFamily="@font/kanit"
+
+            android:background="@drawable/rectangle_2"
+            android:hint="Email"
+            android:padding="10dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/addGsm" />
+
+        <EditText
+            android:id="@+id/addSite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:ems="10"
+            android:fontFamily="@font/kanit"
+
+            android:inputType="textPersonName"
+            android:background="@drawable/rectangle_2"
+            android:hint="Site"
+            android:padding="10dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/addEmail" />
+
+        <Button
+            android:id="@+id/add_btn2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="140dp"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/bbb"
+            android:fontFamily="@font/kanit"
+            android:text="Ajouter Entreprise"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/addEmail" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/add_btn2"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="50dp"
+            />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>
+
+
+

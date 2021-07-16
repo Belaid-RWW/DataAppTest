@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/listFragmentImmeuble">
+
+    <fragment
+        android:id="@+id/listFragmentImmeuble"
+        android:name="com.example.mydata.fragments.list.ListFragmentImmeuble"
+        android:label="Liste d'immeubles ajoutées"
+        tools:layout="@layout/fragment_list_immeuble" >
+        <action
+            android:id="@+id/action_listFragmentImmeuble_to_addFragmentImmeuble"
+            app:destination="@id/addFragmentImmeuble" />
+        <action
+            android:id="@+id/action_listFragmentImmeuble_to_updateFragmentImmeuble"
+            app:destination="@id/updateFragmentImmeuble" />
+    </fragment>
+    <fragment
+        android:id="@+id/addFragmentImmeuble"
+        android:name="com.example.mydata.fragments.add.AddFragmentImmeuble"
+        android:label="Ajouter immeuble"
+        tools:layout="@layout/fragment_add_immeuble" >
+        <action
+            android:id="@+id/action_addFragmentImmeuble_to_listFragmentImmeuble"
+            app:destination="@id/listFragmentImmeuble" />
+        <argument
+            android:name="currentImmeuble"
+            app:argType="com.example.mydata.model.Immeuble" />
+    </fragment>
+    <fragment
+        android:id="@+id/updateFragmentImmeuble"
+        android:name="com.example.mydata.fragments.update.UpdateFragmentImmeuble"
+        android:label="Mettre à jour l'immeuble"
+        tools:layout="@layout/fragment_update_immeuble" >
+        <action
+            android:id="@+id/action_updateFragmentImmeuble_to_listFragmentImmeuble"
+            app:destination="@id/listFragmentImmeuble" />
+        <argument
+            android:name="currentImmeuble"
+            app:argType="com.example.mydata.model.Immeuble" />
+    </fragment>
+</navigation>

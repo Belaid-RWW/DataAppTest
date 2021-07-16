@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="-60dp"
+        tools:context=".fragments.update.UpdateFragmentEntreprise">
+
+        <EditText
+            android:id="@+id/updateNomPresta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="104dp"
+            android:ems="10"
+            android:padding="10dp"
+            android:fontFamily="@font/kanit"
+            android:background="@drawable/rectangle_2"
+            android:hint="Nom Prestataire"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <AutoCompleteTextView
+            android:id="@+id/updateDom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/kanit"
+
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rectangle_2"
+            android:ems="10"
+            android:hint="Domaine d'activité"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/updateNomPresta" />
+
+
+        <AutoCompleteTextView
+            android:id="@+id/updateAct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rectangle_2"
+            android:ems="10"
+            android:hint="Activité"
+            android:fontFamily="@font/kanit"
+            android:padding="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/updateDom" />
+
+        <AutoCompleteTextView
+            android:id="@+id/updateHorDeb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rectangle_2"
+            android:ems="10"
+            android:hint="Horaire d'ouverture"
+            android:padding="10dp"
+            android:fontFamily="@font/kanit"
+
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/updateAct" />
+
+        <AutoCompleteTextView
+            android:id="@+id/updateHorFin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rectangle_2"
+            android:ems="10"
+            android:hint="Horaire de fermeture"
+            android:padding="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:fontFamily="@font/kanit"
+
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/updateHorDeb" />
+
+        <EditText
+            android:id="@+id/updateTel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/kanit"
+
+            android:hint="Tél"
+            android:padding="10dp"
+            android:background="@drawable/rectangle_2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/updateHorFin" />
+
+        <EditText
+            android:id="@+id/updateFax"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:background="@drawable/rectangle_2"
+            android:fontFamily="@font/kanit"
+
+            android:hint="Fax"
+            android:padding="10dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/updateTel" />
+
+        <EditText
+            android:id="@+id/updateGsm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:background="@drawable/rectangle_2"
+            android:fontFamily="@font/kanit"
+
+            android:hint="Gsm"
+            android:padding="10dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/updateFax" />
+
+        <EditText
+            android:id="@+id/updateEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:background="@drawable/rectangle_2"
+            android:hint="Email"
+            android:fontFamily="@font/kanit"
+
+            android:padding="10dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/updateGsm" />
+
+        <EditText
+            android:id="@+id/updateSite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:background="@drawable/rectangle_2"
+            android:hint="Site"
+            android:padding="10dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/kanit"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/updateEmail" />
+
+        <EditText
+            android:id="@+id/updateIDImm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:background="@drawable/rectangle_2"
+            android:hint="ID Immeuble"
+            android:fontFamily="@font/kanit"
+
+            android:padding="10dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/updateSite" />
+
+        <Button
+            android:id="@+id/update_btn2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="170dp"
+            android:layout_marginEnd="50dp"
+            android:background="@drawable/bbb"
+            android:fontFamily="@font/kanit"
+            android:text="Mettre à jour l'entreprise"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/updateEmail" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/update_btn2"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="50dp"
+            />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout></androidx.core.widget.NestedScrollView>

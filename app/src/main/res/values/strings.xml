@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">MyData</string>
+
+    <string name="home1">Bienvenue dans votre espace de collecte des données </string>
+    <string name="home2">Veuillez se connecter afin de bien commencer votre collecte  </string>
+    <string name="home3">Se connecter</string>
+    <string name="home4">Pas de code? Obtenez votre code de connexion</string>
+
+    <string name="login1">Veuillez se connecter</string>
+    <string name="login2">Entrer votre email et mot de passe</string>
+    <string name="login3">Se connecter</string>
+    <string name="login4">Vous avez oublié votre mot de passe?</string>
+    <string name="login5">Veuillez contacter votre chef de projet</string>
+    <string name="empty_email">Entrer votre email</string>
+    <string name="empty_password">Entrer votre mot de passe</string>
+    <string name="invalid_email">Email invalide</string>
+    <string name="invalid_pass">Mot de passe invalide</string>
+    <string name="msg_erreur">Erreurr</string>
+    <string name="Ok_button">Ok</string>
+    <string name="verify_creds">Vérifier vos informations</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

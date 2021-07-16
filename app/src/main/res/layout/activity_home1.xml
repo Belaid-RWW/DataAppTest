@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity1">
+
+    <fragment
+        android:id="@+id/fragment"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp"
+        app:defaultNavHost="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navGraph="@navigation/my_nav" />
+
+
+    <ImageView
+        android:id="@+id/btn_acc"
+        android:layout_width="65dp"
+        android:layout_height="62dp"
+        android:src="@drawable/ic_help2_foreground"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:alpha="0.6"
+        app:tint="@color/bleu" />
+
+    <ImageView
+        android:id="@+id/img_help"
+        android:layout_width="65dp"
+        android:layout_height="62dp"
+        android:src="@drawable/ic_help_foreground"
+        app:layout_constraintEnd_toStartOf="@id/btn_acc"
+        app:layout_constraintTop_toTopOf="parent"
+        android:alpha="0.6"
+        app:tint="@color/bleu" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
