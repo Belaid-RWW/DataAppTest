@@ -236,8 +236,8 @@ class UpdateFragmentEntreprise : Fragment() {
         }
         builder.setNegativeButton("Non"){ _, _ ->
         }
-        builder.setTitle("Supprimer l'entreprise de  ${args.currentEntreprise.nomPresta}?")
-        builder.setMessage("Êtes vous sure de supprimer l'entreprise de${args.currentEntreprise.nomPresta}?")
+        builder.setTitle("Supprimer l'entreprise de ${args.currentEntreprise.nomPresta}?")
+        builder.setMessage("Êtes vous sûre de supprimer l'entreprise de ${args.currentEntreprise.nomPresta}?")
         builder.create().show()
     }
 

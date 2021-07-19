@@ -8,14 +8,30 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="-60dp"
+        android:layout_marginTop="60dp"
         tools:context=".fragments.update.UpdateFragmentEntreprise">
+
+        <EditText
+            android:id="@+id/updateIDImm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:background="@drawable/rectangle_2"
+            android:hint="ID Immeuble"
+            android:fontFamily="@font/kanit"
+
+            android:padding="10dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <EditText
             android:id="@+id/updateNomPresta"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="104dp"
+            android:layout_marginTop="20dp"
             android:ems="10"
             android:padding="10dp"
             android:fontFamily="@font/kanit"
@@ -24,7 +40,7 @@
             android:inputType="textPersonName"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toBottomOf="@id/updateIDImm" />
 
         <AutoCompleteTextView
             android:id="@+id/updateDom"
@@ -170,28 +186,14 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/updateEmail" />
 
-        <EditText
-            android:id="@+id/updateIDImm"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:layout_constraintEnd_toEndOf="parent"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:background="@drawable/rectangle_2"
-            android:hint="ID Immeuble"
-            android:fontFamily="@font/kanit"
 
-            android:padding="10dp"
-            android:layout_marginTop="20dp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/updateSite" />
 
         <Button
             android:id="@+id/update_btn2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="50dp"
-            android:layout_marginTop="170dp"
+            android:layout_marginTop="140dp"
             android:layout_marginEnd="50dp"
             android:background="@drawable/bbb"
             android:fontFamily="@font/kanit"

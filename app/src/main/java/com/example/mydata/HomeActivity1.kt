@@ -19,28 +19,11 @@ class HomeActivity1 : AppCompatActivity() {
             finish()
         }
 
-        val arrItems = arrayOf("Santé : الصحة",
-                "Alimentation : التغذية",
-                "Industrie : الصناعة",
-                "Education : التعليم",
-                "Tourisme : السياحة",
-                "Mécanique : ميكانيك",
-                "Alimentation : التغذية",
-                "Industrie : الصناعة",
-                "Education : التعليم",
-                "Tourisme : السياحة",
-                "Alimentation : التغذية",
-                "Industrie : الصناعة",
-                "Education : التعليم",
-                "Tourisme : السياحة",
-                "Alimentation : التغذية",
-                "Industrie : الصناعة",
-                "Education : التعليم",
-                "Tourisme : السياحة")
+        val arrItems = arrayOf("Administration", "Siège Social","Commerce", "Bureautique", "Polyfonctionnel" ,"Habitation", "En chantier", "Ruine")
 
         img_help.setOnClickListener{
             MaterialAlertDialogBuilder(this)
-                    .setTitle("Liste des activités")
+                    .setTitle("Types des immeubles")
                     .setItems(arrItems) {_, which -> when(which){
                     } }.show()
         }

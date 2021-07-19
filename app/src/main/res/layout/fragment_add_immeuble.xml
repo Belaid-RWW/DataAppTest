@@ -111,6 +111,7 @@
         android:layout_marginLeft="50dp"
         android:layout_marginRight="50dp"
         android:text="Ajouter Immeuble"
+        android:background="@drawable/bbb"
         android:backgroundTint="@color/bleu"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/addAcces" />

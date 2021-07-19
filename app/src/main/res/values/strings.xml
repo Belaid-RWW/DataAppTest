@@ -15,7 +15,7 @@
     <string name="empty_password">Entrer votre mot de passe</string>
     <string name="invalid_email">Email invalide</string>
     <string name="invalid_pass">Mot de passe invalide</string>
-    <string name="msg_erreur">Erreurr</string>
+    <string name="msg_erreur">Erreur</string>
     <string name="Ok_button">Ok</string>
     <string name="verify_creds">Vérifier vos informations</string>
     <!-- TODO: Remove or change this placeholder text -->

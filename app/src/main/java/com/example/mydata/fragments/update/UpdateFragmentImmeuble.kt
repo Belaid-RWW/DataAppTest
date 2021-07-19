@@ -118,13 +118,13 @@ class UpdateFragmentImmeuble : Fragment() {
         val builder = AlertDialog.Builder(requireContext())
         builder.setPositiveButton("Oui"){ _, _ ->
             mImmeubleViewModel.deleteImmeuble(args.currentImmeuble)
-            Toast.makeText(requireContext(), "Immeuble ${args.currentImmeuble.type} supprimée", Toast.LENGTH_SHORT).show()
+            Toast.makeText(requireContext(), "Immeuble de type ${args.currentImmeuble.type} supprimée", Toast.LENGTH_SHORT).show()
             findNavController().navigate(R.id.action_updateFragmentImmeuble_to_listFragmentImmeuble)
         }
         builder.setNegativeButton("Non"){ _, _ ->
         }
-        builder.setTitle("Supprimer l'immeuble  ${args.currentImmeuble.type}?")
-        builder.setMessage("Êtes vous sure de supprimer l'immeuble${args.currentImmeuble.type}?")
+        builder.setTitle("Supprimer l'immeuble de type ${args.currentImmeuble.type}?")
+        builder.setMessage("Êtes vous sûre de supprimer l'immeuble de type ${args.currentImmeuble.type}?")
         builder.create().show()
     }
 }

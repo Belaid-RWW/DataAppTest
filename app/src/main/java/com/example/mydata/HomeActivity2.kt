@@ -16,28 +16,23 @@ class HomeActivity2 : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home2)
 
-        val arrItems = arrayOf("Santé : الصحة",
-                "Alimentation : التغذية",
-                "Industrie : الصناعة",
-                "Education : التعليم",
-                "Tourisme : السياحة",
-                "Mécanique : ميكانيك",
-                "Alimentation : التغذية",
-                "Industrie : الصناعة",
-                "Education : التعليم",
-                "Tourisme : السياحة",
-                "Alimentation : التغذية",
-                "Industrie : الصناعة",
-                "Education : التعليم",
-                "Tourisme : السياحة",
-                "Alimentation : التغذية",
-                "Industrie : الصناعة",
-                "Education : التعليم",
-                "Tourisme : السياحة")
+        val arrItems = arrayOf("Restauration et cafés" ,"Auto, Moto", "Coiffure et soins de beauté", "Sport, loisir et divertissement",
+                "Culture et arts", "Santé", "Alimentation", "Matériel et équipments de construction", "BTP", "Service spécialisé scientifique et technique",
+                "Service B2B", "Réparation et service aux personnes", "Tourisme", "Droit et justice", "Education et enseignement",
+                "Banque, finance, assurance", "Immoblier", "Transport et logistique", "Réligion", "Magasin spécialisé - Meuble",
+                "Magasin spécialisé - Vêtements", "Magasin spécialisé - Sports", "Magasin spécialisé - Informatique et télécommunications",
+                "Magasin spécialisé - Eléctroniques", "Magasin spécialisé - TV et Audio", "Magasin spécialisé - Matériels audio/vidéo",
+                "Magasin spécialisé - Matériels de sécurité et surveillance", "Magasin spécialisé - Récepteurs et paraboles", "Magasin spécialisé - Consoles et jeux vidéos",
+                "Magasin spécialisé - Horlogerie", "Magasin spécialisé - Bijoux", "Magasin spécialisé - Instruments et matériels du musique",
+                "Magasin spécialisé - Produits artisanals et souvenirs", "Magasin spécialisé - Cigarettes éléctroniques et accessoires", "Magasin spécialisé - Article d'emballage et packaging",
+                "Magasin spécialisé - Article de pâtisserie", "Magasin spécialisé - Zoomagasin - Animalerie", "Magasin spécialisé - Articles en plastiques","Magasin spécialisé - Equipements de pêche",
+                "Magasin spécialisé - Equipements de chasse", "Magasin spécialisé - Biens d'antiquité et de brocante", "Magasin spécialisé - Biens d'occasion",
+                "Magasin spécialisé - Equipements des restaurents et cafés", "Magasin spécialisé - Parfumerie", "Magasin spécialisé - Parfumerie Professionnel", "Magasin spécialisé - Matériel et équipement de salon de coiffure",
+                "Magasin spécialisé - Jeux et jouets", "Magasin spécialisé - Maison")
 
         img_help2.setOnClickListener{
             MaterialAlertDialogBuilder(this)
-                    .setTitle("Liste des activités")
+                    .setTitle("Secteurs des activités")
                     .setItems(arrItems) {_, which -> when(which){
                     } }.show()
         }
